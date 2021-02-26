@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Form(props){
     const { values, change, submit, errors, disable } = props;
@@ -14,6 +15,10 @@ function Form(props){
     }
 
     return (
+        <>
+        <h1>Lambda Eats</h1>
+        <Link to="/">Home</Link> 
+        <h1>Build Your Own Pizza</h1>
         <form onSubmit={onSubmit}>
             <select name="size" onChange={onChange}>
                 <option value="">Select</option>
@@ -70,6 +75,7 @@ function Form(props){
 
             <button disabled={disable}>Add to Order</button>
         </form>
+        </>
     )
 }
 export default Form;
