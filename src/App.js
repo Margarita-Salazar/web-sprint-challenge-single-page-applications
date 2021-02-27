@@ -8,6 +8,9 @@ const initialValues = {
   size: "",
   sauce: "",
   pepperoni: false,
+  pizzaSausage: false,
+  canadian: false,
+  spicySausage: false,
   special: "",
   fname: "",
 
@@ -20,10 +23,14 @@ const App = () => {
   const [ formValues, setFormValues ] = useState(initialValues);
   const [ errors, setErrors ] = useState(intitialFormErrors);
   const [ disable, setDisable ] = useState(initialDisable);
+  
   const formSchema = yup.object().shape({
     size: yup.string(),
     sauce: yup.string(),
-    pepperoni: yup.boolean(),
+    pepperoni: yup.boolean,
+    pizzaSausage: yup.boolean,
+    canadian: yup.boolean,
+    spicySausage: yup.boolean,
     special: yup.string(),
     fname: yup
       .string()

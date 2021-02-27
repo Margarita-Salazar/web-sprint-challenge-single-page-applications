@@ -46,15 +46,43 @@ function Form(props){
                     onChange={onChange}
                     />
             </label>
-            <label>
-            Pepperoni
-                <input 
-                    type="checkbox" 
-                    name="pepperoni"
-                    checked={values.pepperoni}
-                    onChange={onChange}
-                    />
-            </label>
+            <h4>Add Toppings</h4>
+                <label>Pepperoni
+                    <input
+                        type="checkbox"
+                        name="pepperoni"
+                        checked={values.pepperoni}
+                        value={values.pepperoni}
+                        onChange={onChange}
+                    ></input>
+                </label>
+                <label>Sausage
+                    <input
+                        type="checkbox"
+                        name="pizzaSausage"
+                        checked={values.pizzaSausage}
+                        value={values.pizzaSausage}
+                        onChange={onChange}
+                    ></input>
+                </label>
+                <label>Canadian Bacon
+                    <input
+                        type="checkbox"
+                        name="canadian"
+                        checked={values.canadian}
+                        value={values.canadian}
+                        onChange={onChange}
+                    ></input>
+                </label>
+                <label>Spicy Italian Sausage
+                    <input
+                        type="checkbox"
+                        name="spicySausage"
+                        checked={values.spicySausage}
+                        value={values.spicySausage}
+                        onChange={onChange}
+                    ></input>
+                </label>
             <h4>Special Instructions</h4>
                 <input 
                     type="text" 
