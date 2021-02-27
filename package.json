@@ -32,5 +32,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "cypress": "^6.5.0"
+  },
+   "scripts": 
+    { "cypress:open": "cypress open" 
+    }
+
 }
